@@ -6,8 +6,6 @@ $user_id = $_GET['user_id'];
 $display_user = "SELECT * FROM users WHERE id=$user_id";
 $user_result = mysqli_query($conn, $display_user);
 $user = mysqli_fetch_assoc($user_result);
-
-
 ?>
 
 <div>

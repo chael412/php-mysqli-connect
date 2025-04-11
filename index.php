@@ -18,10 +18,10 @@
         foreach ($student_result as $users) {
         ?>
             <tr>
-                <td><?php echo $users['id'] ?></td>
-                <td><?php echo $users['firstname'] ?></td>
-                <td><?php echo $users['middlename'] ?></td>
-                <td><?php echo $users['lastname'] ?></td>
+                <td><?= $users['id'] ?></td>
+                <td><?= $users['firstname'] ?></td>
+                <td><?= $users['middlename'] ?></td>
+                <td><?= $users['lastname'] ?></td>
                 <td><a href="user_edit.php?user_id=<?php echo $users['id'] ?>">Edit</a></td>
                 <td><a href="code.php?user_id=<?php echo $users['id'] ?>">Delete</a></td>
             </tr>
